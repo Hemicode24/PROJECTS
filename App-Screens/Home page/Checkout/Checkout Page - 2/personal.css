@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    
+}
+header{
+    background-color: rgba(3, 95, 61, 0.78);
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1%;
+    
+}
+header i{
+    display:flex;
+}
+header h4{
+    font-size: 25px;
+    padding-top: 45px;
+    
+}
+section{
+    padding:10px;
+}
+input{
+    padding: 17px;
+    width: 90%;
+    border-radius: 10px;
+}
+label{
+    padding:10px;
+    margin-bottom:10%;
+}
+.text{
+    padding:10px;
+}
+
+button{
+    width: 90%;
+    background-color: rgba(3, 95, 61, 0.78);
+    color: white;
+    padding: 5p;
+    padding: 7px;
+    border-radius: 10px;
+    
+}

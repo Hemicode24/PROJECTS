@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"poppins",sans-serif;
+    
+}
+header{
+    background-color: rgba(3, 95, 61, 0.78);
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1%;
+    
+}
+header i{
+    display:flex;
+}
+header h4{
+    font-size: 25px;
+    padding-top: 45px;
+    font-weight: bold;
+    
+}
+.section1{
+    padding:10px;
+}
+   
+.section1 input{
+    padding: 17px;
+    width: 90%;
+    border-radius: 10px;
+    border-color:rgb(3, 159, 3);
+}
+.sectio1 label{
+    padding:10px;
+    margin-bottom:10%;
+}
+.text{
+    padding:10px;
+}
+.section2{
+    background-color:whitesmoke;
+}
+.section3 h5{
+    font-size:20px;
+    font-weight:bold;
+    padding: 21px;
+}
+.Reason_box{
+    margin-left: 33px;
+    font-size: 17px;
+}
+button{
+    width: 80%;
+    background-color: rgba(3, 95, 61, 0.78);
+    color: white;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 23px;
+    margin-top: 15px;
+    padding: 6px;
+}
+    
+
+textarea{
+    height: 100px;
+    width: 75%;
+    margin-left: 27px;
+    border-radius: 10px;
+}
+

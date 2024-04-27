@@ -1,0 +1,197 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1" >
+    <title>LIBRARY</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header of the page -->
+    <header class="head">
+        <div class="div1">
+            <div class="back-icon">
+                 <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </div> 
+            <div class="Checkout">
+        
+                <p><h4>Library Form</h4></p>
+            </div>
+    </div>
+    </header>
+    <!-- Section under header and over footer -->
+    <form action="addUser">
+    <section class="section1">
+
+         <!-- container of library slot booking section -->
+        <div class="container">
+            <div class="parking">
+                <div class="parking-Slot">
+                    <select id="slot" name="parkingSlot">
+                        <option>Philosophical Works</option>
+                        <option>Indian Classics</option>
+                        <option>Modern Indian Literature</option>
+                        <option>Indian Art and Culturey</option>
+                        <option>Travel and Exploration</option>
+                    
+                    </select>
+                               
+                </div>
+                <div class="location-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="location">
+                    <select id="location" name="parkingLocation">
+                        <option>Vivekananda Library</option>
+                        <option>Gyan Mandir Library</option>
+                        <option>Aryabhata Library</option>
+                        <option>Jnanpith Library</option>
+                        <option>Indraprastha Library</option>
+                    </select>
+                </div>
+            </div>
+            <div class="Parking-Time">
+                <div class="Parking-from">
+                    <p class="ParkingFont">CHECK-IN</p>
+                    <p class="Time">Today at
+                    <input id="startTime" type="time"  name="startTime"required></p>
+                    <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                </div>    
+                <div class="arrow">
+                    <i class="fa fa-arrow-right"></i>
+                </div>            
+                <div class="Parking-until">
+                    <p class="ParkingFont">CHECK-OUT</p>
+                    <p class="Time">Today at
+                    <input id="endTime" type="time" name="endTime" required onclick="calculateTimeDifference()"></p>
+                    <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                 </div>
+                 
+            </div>
+            <div class="result">
+                <div class="duration">
+                    <p id="result1" name="parkingDuration">--</p> 
+                    <p class="ParkingFont">Total Duration</p>
+                    <!-- <p class="ParkingFont">Total Duration</p> -->
+                </div>
+                <hr>
+                 <div class="toDestination">
+                 <p id="dest">Time</p>
+                 <p class="ParkingFont">To Destination</p>
+                </div>
+            </div>
+        </div>   
+         <!--container of payment summary  -->
+        <div class="PaymentSummary">
+        <p><h4>Payment Summary</h4></p>
+            <div class="container2">
+                <div id="payment">
+                    <div class="Fee">
+                        <p>Library fee</p>
+                        <p >&#8377;<span id="ParkingFee" name="parkingFee">000</span></p>
+                    </div> 
+                <div class="Fee"  id="transaction" >
+                    <p>Transaction Fee</p>
+                    <p name="transactionFee">&#8377;20</p>
+                </div>
+                <div class="Fee">
+                    <p>Total Amount</p>
+                    <p>&#8377;<span  id="Total" name="totalFee">000</span></p>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+        <!-- container of personal details -->
+        <form action="./personalDetails.html">
+        <div class="Details">
+            <p><h4>Personal Details</h4></p>
+            <div class="container3">
+                <p>Tap to personal details</p>
+               <a href="./personalDetails.html">
+                 <button class="btn" id="PersonalLink" onclick="myOnclikFnparking()" type="submit">+</button></a>
+            </div>
+
+        </div>
+        </form>
+        
+   
+        <!-- container of Book details -->
+        <form action="./BookDetails.html">
+        <div class="Details">
+            <p><h4>Book Details</h4></p>
+            <div class="container3">
+                <p>Tap to book details</p>
+               <a href="./BookDetails.html">
+               <button class="btn" id="VehicleLink" onclick="myOnclikFn()">+</button></a>
+            </div>
+
+        </div>
+        </form>
+        </section>
+        <!-- footer section -->
+       <footer class="foot">
+        <div class="Fee">
+            
+            <p id="amt">&#8377;<span id="Total1">000</span></p>
+        </div>
+        <div id="proceedToPay">
+            <input id="proceed" value="Proceed To Pay">      
+        </div>
+
+    </footer>
+    <!-- javascript code of the page -->
+    
+        
+    <script>
+                    
+       
+        var startTimeStr = document.getElementById("startTime");
+        var endTimeStr = document.getElementById("endTime");
+        startTimeStr.addEventListener('input',calculateTimeDifference );
+        endTimeStr.addEventListener('input', calculateTimeDifference);
+
+        function calculateTimeDifference() {
+        
+        var startTime = new Date("1970-01-01T" + startTimeStr.value);
+        var endTime = new Date("1970-01-01T" + endTimeStr.value);
+
+        var timeDifference = endTime - startTime;
+
+       
+        
+        var resultElement = document.getElementById("result1");
+        resultElement.textContent =  hours + " h";
+       
+        var parkingResult=hours*200;
+        var parkingFee=document.getElementById("entryFee");
+        parkingFee.textContent=parkingResult;
+       
+        var TotalAmount=parkingResult+20;
+        
+        var TotalFee=document.getElementById("Total");
+        TotalFee.textContent=TotalAmount;
+        
+        var Total1Fee=document.getElementById("Total1");
+        Total1Fee.textContent=TotalAmount;
+    
+    }
+     
+
+        function myOnclikFnparking(){
+            document.location.href="PersonalDetails.jsp";
+        }
+        function myOnclikFn(){
+            document.location.href="BookBookDetails.jsp";
+        }
+    
+    
+</script> 
+
+</body>
+</html>

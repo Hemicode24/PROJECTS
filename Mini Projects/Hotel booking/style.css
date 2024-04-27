@@ -1,0 +1,586 @@
+body{
+    background-color: whitesmoke;
+
+
+}
+a {
+    text-decoration: none; /* Remove underline from all links */
+}
+
+#Header{
+    background-color:rgb(18, 173, 204);
+    padding: 30px; 
+    
+}
+#Header .head{
+    display: flex;    
+    justify-content: flex-start;
+    flex-direction: row;
+   
+}
+#Header .head h2{
+    margin-left: 50px;
+    color: rgb(255, 255, 255);
+}
+#Header .head a{
+    margin-top: 8px;
+    width: 20px;
+}
+#Header .head a>i{
+    color: white;
+  font-size: 50px;
+  margin-bottom: 20px;
+   
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+#Main{
+    margin-top: 40px;
+    background-color: white;
+    padding: 120px 250px;
+    border: 1px ;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    position: relative;   
+}
+#Main .mai{
+   position: absolute;
+   top: 0;
+   left: 50px;
+   display: flex;
+   background-color:rgb(18, 173, 204);
+   width: 1305px;
+   height:80px ;
+   margin-left: -50px;
+   
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+   
+   
+   background-size: cover;
+   text-align: center;
+}
+#Main .mai .mai1{
+    margin-left: 150px;
+    margin-top: 20px;
+    border: none;
+}
+.mai1 select{
+border: none;
+font-size: 16px;
+}
+#Main .mai .mai3{
+    position: absolute;
+    left: 900px;
+}
+#Main .mai .mai2{
+    position: absolute;
+    left: 105px;
+    bottom: 22px;
+    
+   top: -3px ;
+}
+.mai2 img{
+    
+    width: 25px;
+    margin-top: 20px;
+}
+.mai3 .dropdown{
+    margin-top: 25px;
+    margin-left: 150px;  
+}
+.mai3 .dropdown select{
+  border: none;
+    font-size: 16px;
+    margin-top: -10px;
+   
+}
+.clock{
+    gap: 300px;
+    display: flex;
+    justify-content: center;
+   margin-top: 20px;
+}
+.clock2 img{
+ 
+  margin-top: 20px;
+}
+.clock1{
+   font-size: 20px;
+   
+}
+.clock1 input{
+    margin-top: 20px;
+    border: none;
+    margin-left: -20px;
+}
+.button{
+    margin-left:355px;
+    font-size: 20px;
+}
+.time{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+   margin-top: 20px;
+}
+.time p{
+    font-size: 20px;
+}
+.time p>span{
+    color: red;
+   margin-left: 10px;
+   margin-top: 40px;
+}
+
+
+/* main1 */
+#main1{
+    padding: 50px;
+    background-color:white;
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 100px;
+    border-radius: 20px;
+}
+.personal1 h1{
+    font-size: 30px;
+    margin-top: -20px;
+}
+.personal2 input{
+    margin-left: 100px;
+    border: none;
+    font-size: 20px;
+
+}
+.personal2 div:nth-child(2)>input{
+  margin-right: 200px;
+}
+.personal2 label{
+    border: none;
+    font-size: 20px;
+
+}
+.personal2 div{
+    line-height: 30px;
+}
+.personal2 div:nth-child(2)>input{
+   margin-left: 75px;
+}
+.personal2 div:nth-child(4)>input{
+    margin-left: 90px;
+}
+body{
+    background-color: whitesmoke;
+}
+#main3{
+    padding: 90px;
+    background-color:white;
+    width: 75%;
+    margin-top: 30px;
+    margin-left: 100px;
+    border-radius: 20px;
+}
+.per{
+    margin-top: -40px;
+    font-size: 20px;
+    margin-left: -40px;
+}
+
+.tapdetils{
+    margin-top: 30px;
+    display: flex;
+    gap: 0px;
+    padding: 20px;
+    background-color: whitesmoke;
+    width: 70%;
+    margin-left: 100px;
+  border-radius: 5px;
+}
+.tapdetils p{
+    font-size: 25px;
+    opacity: 0.7;
+    margin-left:80px;
+    border: none;
+    background-color: whitesmoke;
+   
+    
+
+}
+.tapdetils button{
+    border: none;
+    width: 30px;
+    height: 25px;
+    margin-top: 8px;
+    margin-left:150px;
+}
+.tapdetils button img{
+   
+    margin-top: 10px;
+}
+#inputDiv input {
+   
+    
+}
+#inputDiv input{
+    flex-direction: column;
+    border: none;
+    padding-left: 80px;
+    margin-top: 10px;
+    width: 44%;
+    margin-left: 100px;
+    gap: 100px;
+    border: none;
+    padding-bottom: 10px;
+   
+}
+#inputDiv button{
+   margin-left: 50px;
+   background-color: rgb(18, 173, 204);
+   color: white;
+   padding-left: 10px;
+  padding-right: 40px;
+  
+}
+#detailsDiv{
+    
+   
+    width: 54%;
+    margin-top: 8px;
+    margin-left:100px;
+  
+
+}
+#detailsDiv p{
+ margin-left: 20px;
+ margin-top: 10px;
+ background-color: whitesmoke;
+ flex-direction: row;
+ 
+}
+#detailsDiv button{
+   
+ 
+     margin-left: 50px;
+    background-color:rgb(18, 173, 204);
+    color:white;
+    padding-right: 50px;
+    width: 30px;
+   padding-top: 1%;
+    font-size: 15px;
+    padding-bottom: -20px; 
+    border-radius: 5px;
+   
+    
+  
+    
+}
+#editDetailsButton{
+    padding: 50px;
+    
+}
+.hidden {
+    display: none;
+}
+
+#editDetailsButton{
+    padding: 20px;
+}
+
+/* main4 */
+
+body{
+    background-color: whitesmoke;
+}
+#main4{
+    padding: 90px;
+    background-color:white;
+    width: 75%;
+    margin-top: 30px;
+    margin-left: 100px;
+    border-radius: 20px;
+}
+.per1{
+    margin-top: -20px;
+    font-size: 20px;
+    margin-left: -20px;
+}
+
+.tapdetils2{
+    display: flex;
+    gap: 0px;
+    padding: 25px;
+    background-color: white
+    width: 67.5%;
+    margin-left: 100px;
+    
+}
+.tapdetils2 p{
+    font-size: 25px;
+    opacity: 0.7;
+    margin-left:-60px;
+    margin-top: -35px;
+    
+    border: none;
+    background-color:white
+   
+    
+
+}
+.tapdetils2 button{
+    border: none;
+    width: 30px;
+    height: 25px;
+    margin-top: 40 px;
+    margin-left:-200px;
+}
+.tapdetils2 button img{
+   
+    margin-top: 10px;
+}
+#inputDiv1 input {
+   
+    
+}
+#inputDiv1 input{
+    flex-direction: column;
+    border: none;
+    padding-left: 80px;
+    margin-top: 10px;
+    width: 44%;
+    margin-left: 100px;
+    gap: 100px;
+    border: none;
+    padding-bottom: 10px;
+   
+}
+#inputDiv1 button{
+   margin-left: 50px;
+   background-color: rgb(18, 173, 204);
+   color: white;
+ padding-left: 10px;
+  padding-right: 40px;
+  
+}
+#detailsDiv1{
+    
+   
+    width: 54%;
+    margin-top: 8px;
+    margin-left:100px;
+  
+
+}
+#detailsDiv1 p{
+ margin-left: 20px;
+ margin-top: 10px;
+ background-color: whitesmoke;
+ flex-direction: row;
+ 
+}
+#detailsDiv1 button{
+   
+ 
+     margin-left: 50px;
+    background-color:rgb(18, 173, 204);
+    color:white;
+    padding-right: 50px;
+    width: 30px;
+   padding-top: 1%;
+    font-size: 15px;
+    padding-bottom: -20px; 
+    border-radius: 5px;
+   
+    
+  
+    
+}
+#editDetailsButton1{
+    padding: 50px;
+    
+}
+.hidden1 {
+    display: none;
+}
+
+#editDetailsButton1{
+    padding: 20px;
+}
+
+/* main5 */
+
+body{
+    background-color: whitesmoke;
+}
+#main5{
+    padding: 90px;
+    background-color:white;
+    width: 75%;
+    margin-top: 30px;
+    margin-left: 100px;
+    border-radius: 20px;
+}
+.per2{
+    margin-top: -20px;
+    font-size: 20px;
+}
+
+.tapdetils3{
+    display: flex;
+    gap: 0px;
+    padding: 20px;
+    background-color: whitesmoke;
+    width: 70%;
+    margin-left: 100px;
+    display: i;
+}
+.tapdetils3 p{
+    font-size: 25px;
+    opacity: 0.7;
+    margin-left:-80px;
+    border: none;
+    margin-top: -30px;
+    background-color: whitesmoke;
+   
+    
+
+}
+.tapdetils3 button{
+    border: none;
+    width: 30px;
+    height: 25px;
+    margin-top: 8px;
+    margin-left:-200px;
+}
+.tapdetils2 button img{
+   
+    margin-top: 10px;
+}
+#inputDiv1 input {
+   
+    
+}
+/* #inputDiv1 input{
+    flex-direction: column;
+    border: none;
+    padding-left: 80px;
+    margin-top: 10px;
+    width: 44%;
+    margin-left: 100px;
+    gap: 100px;
+    border: none;
+    padding-bottom: 10px;
+   
+} */
+#check{
+    font-size: 20px;
+    border: none;
+    margin-left: 100px;
+}
+#inputDiv2 button{
+   margin-left: 50px;
+   background-color:rgb(18, 173, 204);
+   color: white;
+   padding-left: 10px;
+   padding-right: 40px;
+  
+}
+#detailsDiv2{
+    width: 54%;
+    margin-top: 8px;
+    margin-left:100px;
+
+}
+#detailsDiv2 p{
+ margin-left: 20px;
+ margin-top: 10px;
+ background-color: white;
+ flex-direction: row;
+ 
+}
+#detailsDiv2 button{
+     margin-left: 50px;
+    background-color:rgb(18, 173, 204);
+    color:white;
+    padding-right: 50px;
+    width: 30px;
+   padding-top: 1%;
+    font-size: 15px;
+    padding-bottom: -20px; 
+    border-radius: 5px; 
+    
+}
+#editDetailsButton2{
+    padding: 50px;
+    
+}
+.hidden2 {
+    display: none;
+}
+
+#editDetailsButton2{
+    padding: 20px;
+}
+
+/* main6 */
+
+
+#main6{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.head64{
+    display: flex;
+}
+.head62{
+    font-size: 18px;
+}
+.head63 {
+    margin-left: 150px;
+    margin-top: 10px;
+    
+  
+}
+.head6 h1{
+    font-size: 30px;
+}
+
+.head62 p{
+    font-size: 25px;
+   
+}
+.head63 button{
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color:rgb(18, 173, 204);
+    color: white;
+    font-size: 20px;
+    margin-left: 100px;
+    margin-top: 5px;
+
+}
+.head66{
+ 
+   margin-left: 150px;
+   font-size: 25px;
+}
+.head64{
+    margin-left: 200px;
+}
